@@ -5,11 +5,18 @@ in HTML as class=""
 A hash (#) is used when id is used in the HTML file
 using id=""
 
+CSS prioritizes IDs more compared to classes.
+Hence, an ID element will overwrite the class element.
+
 Other than that, tag elements wen defined normally, for example,
 p, h2, etc., the styling is automatically applied to all elements
 in the entire HTML document.
 */
 
+#Main_Heading{
+    color: darkorchid;
+    background-color: yellowgreen;
+}
 p{
     color:purple;
     font-size: 18px;
@@ -37,8 +44,4 @@ h2{
 .div_class{
     color: tomato;
     background-color: slategray;
-}
-#Main_Heading{
-    color: darkorchid;
-    background-color: yellowgreen;
 }
