@@ -30,7 +30,11 @@ priority over other elements.
 #Main_Heading{
 
     color: darkorchid;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
     background-color: yellowgreen;
+    width:fit-content;
 }
 [type='radio']{
     margin:20px;
@@ -44,12 +48,30 @@ p{
 }
 h2{
     color:rgb(0, 255, 255);
+    width:fit-content;
     background-color: rgb(60, 106, 245);
     margin:10px 5px 10px 5px;
     padding: 5px 10px 5px 10px;
     /* border-color: darkblue; */
     /* border-width: 5px; */
     /* border-style: solid; */
+}
+.containers{
+    font-size: 20px;
+    margin: 10px;
+    width:fit-content;
+    background: lightblue;
+    width:max-content;
+    display: grid;
+    
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 20px 20px;
+}
+
+/* Giving multiple classes the same attribute */
+
+.box1, .box3, .box5{
+    background: lightcoral;
 }
 .text-color-1{
     --light_violet:rgb(255, 138, 255);
