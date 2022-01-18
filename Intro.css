@@ -25,6 +25,8 @@ p{
 h2{
     color:rgb(0, 255, 255);
     background-color: rgb(60, 106, 245);
+    margin:10px 5px 10px 5px;
+    padding: 5px 10px 5px 10px;
     /* border-color: darkblue; */
     /* border-width: 5px; */
     /* border-style: solid; */
