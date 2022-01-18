@@ -11,14 +11,34 @@ Hence, an ID element will overwrite the class element.
 Other than that, tag elements wen defined normally, for example,
 p, h2, etc., the styling is automatically applied to all elements
 in the entire HTML document.
+
+In case of conflicting style tags, the order in which the tags are
+declared in, matters. In this case, the precedence of the class which
+is declared the latest is the highest. 
+
+The !important attribute after an element gives that element the highest
+priority over other elements.
+
 */
 
+:root{
+    /* Root element to store all variable junk and likewise */
+    --light_violet:darkorchid;
+    /* Double hypens are used to declare a variable which can be used anywhere in the CSS File */
+}
+
 #Main_Heading{
+
     color: darkorchid;
     background-color: yellowgreen;
 }
+[type='radio']{
+    margin:20px;
+
+}
 p{
-    color:purple;
+    color: var(--purple_color, purple) !important;
+    /* The colour is still written as a fallback in case the variable does not work. */
     font-size: 18px;
     font-family: monospace;
 }
@@ -32,12 +52,13 @@ h2{
     /* border-style: solid; */
 }
 .text-color-1{
-    color: darkorchid;
+    --light_violet:rgb(255, 138, 255);
+    /* A local variable with a different value will overwrite the data from the root element */
+    color: var(--light_violet);
     font-family: 'Courier New', Courier, monospace;
 }
 .image_layouts{
-    width: 900px;
-    border-radius: 10px;
+    border-radius: 15px;
     border-style: solid;
     border-color: red;
     border-width: 5px;
