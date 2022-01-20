@@ -35,6 +35,7 @@ priority over other elements.
     border-radius: 15px;
     background-color: yellowgreen;
     width:fit-content;
+
 }
 [type='radio']{
     margin:20px;
@@ -64,14 +65,29 @@ h2{
     width:max-content;
     display: grid;
     
-    grid-template-columns: 50px 50px 50px;
+    /* Repeat function */
+    grid-template-columns: repeat(4, 50);
     grid-template-rows: 20px 20px;
+
+    grid-row-gap: 10px;
+    grid-column-gap:10px;
+    /* To shrink row and column gap into one line of code we use: */
+    grid-gap: 10px 10px;
+
+    align-items: center;
+
+
+    grid-template-areas: 
+        "header header header"
+        "content content content"
+        "footer footer footer";
 }
 
 /* Giving multiple classes the same attribute */
 
 .box1, .box3, .box5{
     background: lightcoral;
+    grid-area: footer;
 }
 .text-color-1{
     --light_violet:rgb(255, 138, 255);
