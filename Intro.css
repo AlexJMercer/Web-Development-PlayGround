@@ -37,6 +37,19 @@ priority over other elements.
     width:fit-content;
 
 }
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: whitesmoke;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: gainsboro;
+    border-radius: 10px;
+    border: 1px gray;
+}
+
 [type='radio']{
     margin:20px;
 
