@@ -7,6 +7,8 @@ html, body {
     box-sizing: border-box;
     height:100%;
     width:100%;
+
+    scroll-behavior:smooth;
 }
 
 body::-webkit-scrollbar {
@@ -121,7 +123,7 @@ span.text-split {
 .portfolio-class .image-container .type-a{
     display: flex;
     flex-direction: column;
-    width:32%;
+    width:30%;
     
 }
 
@@ -129,7 +131,7 @@ span.text-split {
 .image-container 
 .type-a img{
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     border-radius: 20px;
     box-shadow: 20px 10px 25px #444;
 }
