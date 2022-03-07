@@ -3,99 +3,133 @@
 html, body {
     margin:0;
     padding:0;
+    border: 0px;
     box-sizing: border-box;
     height:100%;
     width:100%;
 }
 
 body::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
+    height: 7px;
 }
 body::-webkit-scrollbar-track {
     mix-blend-mode: overlay;
 }
 body::-webkit-scrollbar-thumb {
-    background-color: #444;
+    background-color: #666;
     border-radius: 10px;
 }
 
-.title-text h1{
-    margin-top: 200px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 6.5em;
-    font-weight: bolder;
-    text-transform: uppercase;
-    color:white;
-    text-align: center;
-    vertical-align: middle;
-    letter-spacing: 1px;
-    word-spacing: 5px;
-    text-shadow:5px 5px #000;
-    mix-blend-mode:overlay;
-
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    transform-style: preserve-3d;
-    z-index: -1;
-}
-
-.background {
-    transform: translateZ(-10px) scale(2);
-}
-
-/* .foreground {
-    transform: translateZ(-5px) scale(1.5);
-} */
-.background {
-    position: absolute;
+.intro-page {
+    background-image: url(./img/wood-texture.jpg);
+    margin-top: 0;
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    z-index: -1;
+    display: table;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    position: absolute;
+    top: 45%;
+    width:100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-size: 5rem;
+    font-weight:500;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.title span.title-text {
+    padding: 15px 20px 15px 20px;
+    background-color: rgb(15, 15, 15);
+    opacity: 0.7;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .intro-page {
+        background-attachment: scroll;
+    }
 }
 
 h2 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 200%;
-    font-weight: 700%;
-    margin: 50px 0 50px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem;
     text-transform: uppercase;
-    color:gray;
+    letter-spacing: 8px;
+    word-spacing: 10px;
     text-align: center;
-    letter-spacing: 25px;
-    word-spacing: 15px;
-    text-decoration: overline underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 5px;
+    font-weight: 100;
+    text-decoration: overline underline rgb(77, 77, 77);
+    text-underline-offset: 8px;
+    margin: 7vh 0 7vh 0;
+}
+span.text-split {
+    font-weight: 800;
 }
 
-.intro {
-    /* background-image: url(./img/wood-texture.jpg); */
-    background-size:cover;
-    top:0;
-    height: 100%;
+.menu .list-container {
+    /* background-color: rgba(15, 15, 15, 0.6); */
+    margin-top: 0vh;
     
-    position: absolute;
-    overflow-y: auto;
-    overflow-x: hidden;
-    perspective: 10px;
+    padding: 5vh 0 5vh 55%; 
 }
 
-.image-container{
+.list-items {
+    display: inline;
+    padding-right: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    
+}
+
+.list-links{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: 0.15rem;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.portfolio-class {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px 0 10px;
+}
+
+.portfolio-class .image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.portfolio-class .image-container .type-a{
+    display: flex;
+    flex-direction: column;
+    width:32%;
     
 }
 
-.image_vert {
-    width:100%;
-}
-
-.image_land {
+.portfolio-class 
+.image-container 
+.type-a img{
     width: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 20px 10px 25px #444;
 }
