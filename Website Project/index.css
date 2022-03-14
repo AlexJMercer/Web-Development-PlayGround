@@ -41,12 +41,13 @@ body::-webkit-scrollbar-thumb {
     top: 45%;
     width:100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
     font-size: 5rem;
     font-weight:500;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 10px;
+    background-attachment:scroll;
 }
 
 .title span.title-text {
@@ -124,7 +125,6 @@ span.text-split {
     display: flex;
     flex-direction: column;
     width:30%;
-    
 }
 
 .portfolio-class 
@@ -134,4 +134,15 @@ span.text-split {
     margin-bottom: 50px;
     border-radius: 20px;
     box-shadow: 20px 10px 25px #444;
+}
+
+.footer-list {
+    margin-inline-start: 30%;
+    margin-inline-end: 30%;
+    justify-content: space-between;
+}
+.list {
+    display: inline;
+    align-items: center;
+    padding: 2vh;
 }
