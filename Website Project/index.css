@@ -107,6 +107,25 @@ span.text-split {
     text-align: center;
 }
 
+#vertical-line {
+    border-left: 1.5px solid black;
+    height: 70vh;
+    position:relative;
+    left: 50%; 
+}    
+.about-section
+.photo-left {
+    
+}
+
+.about-section
+.about-text {
+    display: block;
+    padding: 5rem;
+    text-align: justify;
+    word-wrap: normal;
+}
+
 .portfolio-class {
     display: flex;
     flex-direction: column;
@@ -136,13 +155,48 @@ span.text-split {
     box-shadow: 20px 10px 25px #444;
 }
 
+.contact-info {
+    text-align: center;
+    line-height: 70px;
+
+    font-family:Verdana, Tahoma, sans-serif;
+    font-size: larger;
+    color:#222; 
+}
+
+.contact-info
+.text1 {
+    font-size: xx-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.contact-info
+.text2 {
+    font-size: x-large;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-weight:500;
+}
+.contact-info
+.text3 {
+    font-family:sans-serif;
+    font-size:x-large;
+
+    letter-spacing: 2px;
+}
+
 .footer-list {
-    margin-inline-start: 30%;
-    margin-inline-end: 30%;
+    text-align: center;
+    /* margin-inline-start: 10%;
+    margin-inline-end: 10%; */
     justify-content: space-between;
 }
 .list {
-    display: inline;
-    align-items: center;
-    padding: 2vh;
+    display:inline-flex;
+    /* align-content: center;
+    align-items: center; */
+    padding: 10vh 15vh 15vh 15vh;
 }
