@@ -7,7 +7,7 @@ html, body {
     box-sizing: border-box;
     height:100%;
     width:100%;
-
+    /* overflow-x: hidden; */
     scroll-behavior:smooth;
 }
 
@@ -72,7 +72,7 @@ h2 {
     font-weight: 100;
     text-decoration: overline underline rgb(77, 77, 77);
     text-underline-offset: 8px;
-    margin: 7vh 0 7vh 0;
+    margin: 7vh 0 5vh 0;
 }
 span.text-split {
     font-weight: 800;
@@ -107,23 +107,80 @@ span.text-split {
     text-align: center;
 }
 
+/* .about-section {
+    height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+} */
+
 #vertical-line {
-    border-left: 1.5px solid black;
-    height: 70vh;
-    position:relative;
-    left: 50%; 
-}    
-.about-section
-.photo-left {
+    right: 0;
+    border-left: 1.5px solid #444;
     
+    position:absolute;
+    text-align: center; 
+}
+.split-container {
+    width: 100%;
+    height: 78vh;
+    position: relative;
 }
 
-.about-section
+.split {
+    height: 100%;
+    width: 50%;
+    position:absolute;
+    z-index: 1;
+    top: 0;
+    padding: 1rem;
+}
+
+.left {
+    left: 0;
+    /* background-color: aqua; */
+}
+
+.right {
+    right: 0;
+    /* background-color: greenyellow; */
+}
+  
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .about-section
+.photo-left {
+    left: 0;
+    width: 50%;
+    padding: 60px;
+} */
+
+.centered
 .about-text {
-    display: block;
-    padding: 5rem;
-    text-align: justify;
+    right: 0;
+    padding: 40px;
+    text-align: left;
+    line-height: 2.5rem;
     word-wrap: normal;
+
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.centered
+.portrait {
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 20px 10px 25px #444;
 }
 
 .portfolio-class {
